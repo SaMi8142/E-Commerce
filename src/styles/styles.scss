@@ -1,0 +1,159 @@
+$bgColor2: #2c2c2c;
+$bgColor: #272727;
+$t1: #b7d33c;
+$t1Hover: #9db535;
+$t2: #fafafa;
+
+
+body{
+    
+    background-color: $bgColor2;
+    color: $t2;
+}
+
+// NAVBAR
+#brand{
+    color: $t2;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large;
+    letter-spacing: 0.1rem;
+    padding-right: 0.5rem;
+}
+
+#len{
+    color: $t1 !important;
+}
+
+#nav-comp{
+    background-color: $bgColor;
+    z-index: 1;
+}
+
+.nav-links{
+    margin-right: 1rem;
+    line-height: 3rem;
+}
+
+.links{
+    font-size: small !important;
+    font-weight:bolder !important;
+    color: $t2 !important;
+    text-decoration: none;
+
+    &:hover{
+        color: $t1 !important;
+    }    
+
+}
+
+// CART
+#cart{
+    position: relative;
+    font-size: large;
+    height: 2.6rem;
+    width: 1.4rem;
+    color: $t2 !important;
+    font-weight: bolder;
+}
+#bag-icon{
+    position: absolute;
+    top: -0.2rem;
+    background-color: transparent;
+    border: none;
+}
+#item-counter{
+    position: absolute;
+    top: -0.7rem;
+    right: -0.3rem;
+    color: $t1;
+    font-size: 0.8rem;
+}
+
+//DRAWER
+.item-drawer{
+    box-shadow: 1px 2px 6px grey;
+    border-radius: 1rem;
+    color: $bgColor;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.drawer-col-2{
+    
+}
+.drawer-col-3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+// SHOP
+#shop{
+    padding-top: 4rem;
+}
+#shop-header{
+    color: $t1;
+}
+
+// PRODUCT
+.product-container{
+    margin: 2rem auto;
+    max-width: 11rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container{
+    width: 100%;
+    height: 10rem;
+    border: 0.1rem solid #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 70%;
+    height: 80%;
+}
+
+h6.product-meta{
+    color: $t2 !important;
+    margin-top: 1rem;
+    font-size: small;
+}
+h5.product-meta{
+    color: $t1;
+    font-weight: bolder;
+}
+
+button.product-meta{
+    font-size:medium;
+    font-weight: 700;
+    margin-top: 1rem;
+    background-color: $t1;
+    color: $bgColor;
+    border-style: none;
+    border-radius: 1rem;
+    width: 70%;
+    line-height: 2rem;
+    &:hover{
+        background-color: $t1Hover;
+    }
+}
+.product-meta{
+    margin-bottom: 1rem;
+}
+
+// ADD PRODUCT
+#add-product{
+    margin: 4rem auto;
+    width: 25rem;
+}
