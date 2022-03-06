@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { message } from 'antd'
 
-const API_URL = 'https://siddayao-ecommerce.herokuapp.com/' || 'http://localhost:8000' //ENV NOT WORKING
+const API_URL = 'http://localhost:8000' || 'https://siddayao-ecommerce.herokuapp.com/' //ENV NOT WORKING
 
 
 const API = axios.create({ baseURL: API_URL, headers: { Accept: 'application/json' } })
