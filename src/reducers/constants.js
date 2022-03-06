@@ -7,5 +7,6 @@ export const productsConstants = {
 
 export const cartConstants = {
     ADD_TO_CART: 'addToCart',
-    DELETE_ITEM: 'deleteItem'
+    DROP_ITEMS: 'dropItems',
+    DELETE_ITEM: 'deleteItem',
 }

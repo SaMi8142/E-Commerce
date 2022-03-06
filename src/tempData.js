@@ -1,4 +1,3 @@
-import { hasUnreliableEmptyValue } from "@testing-library/user-event/dist/utils"
 
 export const tempProducts = [
     {

@@ -5,6 +5,10 @@ export const productsReducer = (products, action) => {
         case productsConstants.FETCH_ALL:
             return action.payload
         case productsConstants.ADD_PRODUCT:
-            return [action.payload, ...products]
+            return [...products, action.payload]
+        case productsConstants.UPDATE_PRODUCT:
+            return products.map(product => product.id === action.payload.id ? action.payload : product)
+        case productsConstants.DELETE_PRODUCT:
+            return products.filter(product => product.id !== action.payload)
     }
 }
